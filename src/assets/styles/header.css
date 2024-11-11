@@ -1,0 +1,154 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10rem;
+  padding: 2rem 0;
+  font-weight: 700;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 50px;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: border-bottom 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  border-bottom: 5px solid #008248;
+}
+
+.header-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-icon {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.nav-icon_signin {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 30px;
+}
+
+.nav-icon_signin:hover {
+  background-color: #d9d8d7;
+}
+
+.join-now {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.join-now:hover {
+  background-color: #d9d8d7;
+  color: #000;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 2rem;
+    width: 100%;
+  }
+
+  .header-left {
+    display: flex;
+    gap: 16rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* Initially hidden off-screen */
+    height: 100%;
+    width: 250px;
+    padding: 2rem;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-menu.open {
+    right: 0;
+    top: 100px;
+    /* Slide in from the right */
+  }
+
+  .nav-menu a {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .nav-icon_signin {
+    padding: 0.5rem 1rem;
+    /* Remove padding in responsive view */
+    width: 30%;
+    /* Full width for mobile */
+    /* Space between buttons */
+    text-align: center;
+    /* Center text */
+  }
+
+  .join-now {
+    padding: 0.5rem 1rem;
+    /* Remove padding in responsive view */
+    width: 30%;
+    /* Full width for mobile */
+
+    /* Space between buttons */
+    text-align: center;
+    /* Center text */
+  }
+
+  .header-right {
+    display: none;
+    /* Hide header-right on smaller screens */
+  }
+}

@@ -1,0 +1,92 @@
+.extras-component {
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.extras-header {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.extras-description {
+  font-size: 1.1rem;
+  width: 50%;
+  font-weight: 500;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.extras-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.extras-column {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.extras-image {
+  width: 30%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.extras-column h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.extras-column p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.extras-link {
+  color: #006341;
+  /* Starbucks theme color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.extras-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .extras-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .extras-column {
+    max-width: 100%;
+  }
+
+  .extras-column h3 {
+    font-size: 1.5rem;
+  }
+
+  .extras-column p {
+    font-size: 1.1rem;
+  }
+
+  .extras-column a {
+    font-size: 1.1rem;
+  }
+
+  .extras-description {
+    width: 100%;
+  }
+}

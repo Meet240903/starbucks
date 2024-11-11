@@ -1,0 +1,100 @@
+.Thanku-card-carousel-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  padding-left: 10rem;
+}
+
+.Thanku-carousel-container {
+  width: 100%;
+}
+
+.Thanku-featured-section {
+  flex: 1;
+  padding: 1rem 0;
+}
+
+.Thanku-featured-section h2 {
+  padding: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.Thanku-carousel-section {
+  flex: 3;
+  position: relative;
+}
+
+.Thanku-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.Thanku-carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.Thanku-carousel-item {
+  flex: 0 0 calc((100% - 6rem) / 4);
+  /* Default: Show 4 images per slide */
+  box-sizing: border-box;
+}
+
+.Thanku-carousel-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.Thanku-carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.Thanku-carousel-button.left {
+  left: 0;
+}
+
+.Thanku-carousel-button.right {
+  right: 0;
+}
+
+.Thanku-carousel-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .Thanku-card-carousel-container {
+    padding-left: 1rem;
+  }
+
+  .Thanku-carousel-item {
+    flex: 0 0 100%;
+    /* Show 1 image per slide */
+  }
+
+  .Thanku-featured-section h2 {
+    font-size: 20px;
+  }
+
+  .Thanku-carousel-button {
+    height: 34px;
+    width: 34px;
+    font-size: 20px;
+  }
+}

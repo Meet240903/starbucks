@@ -1,0 +1,130 @@
+.program-container {
+  border: 30px solid #008248;
+  background-color: #d4e9e2;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.program-content {
+  text-align: center;
+}
+
+.program-heading {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.program-subheading {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.program-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 0 10rem;
+}
+
+.program-column {
+  flex: 1 20% 20%;
+
+  padding: 1rem;
+  border-radius: 8px;
+
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.program-column img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.program-text {
+  font-size: 1.2rem;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.join-button {
+  background-color: #008248;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.join-button:hover {
+  background-color: #00693e;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .program-row {
+    gap: 0;
+    margin: 0 0.1rem;
+    /* Adjust margin for smaller screens */
+  }
+
+  .program-column {
+    flex: 1 1 100%;
+    /* Columns take full width */
+    margin: 0.5rem 0;
+    padding: 0;
+    /* Adjust vertical spacing */
+  }
+
+  .program-heading {
+    font-size: 2rem;
+    font-weight: 800;
+    /* Smaller heading for mobile */
+  }
+
+  .program-subheading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    /* Smaller subheading for mobile */
+  }
+
+  .program-column img {
+    max-width: 150px;
+    /* Reduce image size */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .program-row {
+    margin: 0 5rem;
+    /* Adjust margin for tablets */
+  }
+
+  .program-column {
+    flex: 1 1 45%;
+    /* Columns take 45% width */
+  }
+
+  .program-heading {
+    font-size: 2.2rem;
+    /* Slightly smaller heading */
+  }
+
+  .program-subheading {
+    font-size: 1.1rem;
+    /* Adjust subheading size */
+  }
+
+  .program-column img {
+    max-width: 180px;
+    /* Slightly smaller image */
+  }
+}

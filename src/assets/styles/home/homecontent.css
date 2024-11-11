@@ -1,0 +1,29 @@
+.home-content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.info-text {
+  font-size: 1rem;
+  color: #1e3932;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .home-content-container {
+    padding: 1rem;
+  }
+
+  .info-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-text {
+    font-size: 0.8rem;
+  }
+}

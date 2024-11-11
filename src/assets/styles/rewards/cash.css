@@ -1,0 +1,105 @@
+.cash-container {
+  background-color: #f3f1e7;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cash-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cash-heading {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.cash-subheading {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.cash-rows {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.cash-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1500px;
+}
+
+.cash-column {
+  flex: 1 1 30%;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 0.5rem;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.cash-column img {
+  width: 150px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.cash-column h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cash-column p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: black;
+  padding: 0;
+}
+
+
+@media (max-width: 768px) {
+  .cash-column {
+    flex: 1 1 100%;
+    flex-direction: column;
+    /* Added to make the content stack vertically */
+    align-items: center;
+    /* Center align items */
+    gap: 0;
+    text-align: center;
+    /* Center text for smaller screens */
+  }
+
+  .cash-column h2 {
+    margin-top: 0;
+    font-size: 1.7rem;
+
+  }
+
+  .cash-column p {
+    font-size: 1.2rem;
+  }
+
+  .cash-column img {
+    margin: 1rem 0 0 0;
+    /* Adjust margin to center image */
+    width: 150px;
+    /* Reduce image size for smaller screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cash-column {
+    flex: 1 1 45%;
+    flex-direction: row;
+    /* Keep the row layout for medium screens */
+  }
+}

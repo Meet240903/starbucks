@@ -1,0 +1,159 @@
+/* Styling for the RewardTop component */
+.reward-top {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 10rem;
+  background-color: #1e3932;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Image section styling */
+.reward-image-section {
+  background-color: #d4e9e2;
+  background-image: url('../../images/home/xl-hero-desktop_2021.webp');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  /* Default for large screens */
+}
+
+.reward-content {
+  color: white;
+  text-align: left;
+  margin: auto 10rem;
+  /* Semi-transparent background for readability */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.reward-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.reward-content p {
+  font-size: 1.2rem;
+  padding: 0;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.join-now-btn {
+  background-color: #008248;
+  color: white;
+  border: none;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.join-now-btn:hover {
+  background-color: #d35e4c;
+}
+
+.join-app-text {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  .reward-top {
+    padding: 0 3rem;
+    font-size: 1.2rem;
+  }
+
+  .reward-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .reward-content p {
+    font-size: 1rem;
+  }
+
+  .join-now-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reward-top {
+    padding: 0 2rem;
+  }
+
+  .reward-image-section {
+    flex-direction: column;
+    /* Stack image and content vertically */
+    height: auto;
+  }
+
+  .reward-content {
+    margin: 1rem;
+    text-align: center;
+    /* Center text for smaller screens */
+  }
+
+  .reward-content h1 {
+    font-size: 2rem;
+  }
+
+  .join-now-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .reward-top {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .reward-image-section {
+    height: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* Stack content below the image */
+  }
+
+  .reward-content {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .reward-content h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .reward-content p {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .join-now-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+  }
+}

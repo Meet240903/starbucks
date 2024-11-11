@@ -1,0 +1,141 @@
+.question-container {
+  background-color: gainsboro;
+  padding: 2rem 10rem;
+  color: black;
+  margin-top: 3rem;
+  box-sizing: border-box;
+}
+
+.question-header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.question-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.question-header p {
+  font-size: 1.2rem;
+  padding: 0;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.question-note {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.question-note p {
+  padding: 0;
+}
+
+.question-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.question-text ol {
+  margin-left: 1.2rem;
+  font-weight: 600;
+  padding: 0;
+}
+
+.question-columns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.question-columns .column {
+  flex: 1 30%;
+  text-align: left;
+  padding: 0;
+  /* padding: 1rem; */
+}
+
+.question-columns .column h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.question-columns .column p {
+  font-size: 1rem;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .question-container {
+    padding: 2rem 5rem;
+  }
+
+  .question-header h1 {
+    font-size: 2rem;
+  }
+
+  .question-header p {
+    font-size: 1rem;
+  }
+
+  .question-columns .column {
+    flex: 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .question-container {
+
+    padding: 1rem;
+  }
+
+  .question-columns {
+    flex-direction: column;
+  }
+
+  .column {
+    flex: 1 1 100%;
+  }
+
+  .question-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .question-header p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .question-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .question-header p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .question-note p {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .question-columns .column h2 {
+    font-size: 1.2rem;
+  }
+
+  .question-columns .column p {
+    font-size: 0.9rem;
+  }
+}

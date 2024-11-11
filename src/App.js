@@ -1,25 +1,65 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+	BrowserRouter as Router,
+	Route,
+	Routes,
+	BrowserRouter,
+} from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Reward from "./components/Reward";
+import GiftCard from "./components/GiftCard";
+import MenuInnerpage from "./components/Menu/MenuInnerpage";
+import MenuInnerHeader from "./components/Menu/MenuInnerHeader";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route
+					path="/"
+					element={
+						<>
+							<Header />
+							<Home />
+							<Footer />
+						</>
+					}
+				/>{" "}
+				<Route
+					path="/menu-inner"
+					element={
+						<>
+							<Header />
+							<MenuInnerHeader />
+							<Footer />
+						</>
+					}
+				/>
+				<Route
+					path="/reward"
+					element={
+						<>
+							<Header />
+							<Reward />
+							<Footer />
+						</>
+					}
+				/>
+				<Route
+					path="/gift"
+					element={
+						<>
+							<Header />
+							<GiftCard />
+							<Footer />
+						</>
+					}
+				/>
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;

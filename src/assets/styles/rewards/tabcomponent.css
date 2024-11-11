@@ -1,0 +1,91 @@
+.tab-component {
+  background-color: #f1f8f6;
+  padding: 20px;
+  max-width: 14000px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.tab-header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 5rem;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #e7f3ef;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.tab-button.active {
+  background-color: #d4e9e2;
+  font-weight: bold;
+}
+
+.tab-button:hover {
+  background-color: #c3dfd8;
+}
+
+.tab-content {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-radius: 8px; */
+}
+
+.content-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+  /* or any value suitable for your design */
+  width: 100%;
+  /* Optional, but ensures responsiveness */
+}
+
+.tab-image {
+  border-radius: 8px;
+  width: 60%;
+}
+
+.tab-text {
+  flex: 1;
+  font-size: 18px;
+  width: 50%;
+  font-weight: 500;
+  color: #1e3932;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .tab-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tab-image {
+    width: 150px;
+    height: 120px;
+  }
+
+  .tab-text {
+    font-size: 16px;
+  }
+}
